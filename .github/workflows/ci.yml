@@ -32,12 +32,6 @@ jobs:
             - name: Install dependencies
               run: pnpm i --frozen-lockfile
 
-            - name: Install rimraf
-              run: npm i -g rimraf
-
-            - name: fix path
-              run: echo "./node_modules/.bin" >> "$GITHUB_PATH"
-
             - name: Build
               run: pnpm run build
 
